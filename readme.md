@@ -1,8 +1,8 @@
 # PHP MVC Todo Application
 
-A simple Todo application built using **PHP (OOP, MVC)**, **MySQL**, **HTML**, **CSS**, and **JavaScript**.
+A simple Todo application
 
-Users can:
+User can:
 
 * Create tasks with title and description
 * Mark tasks as complete or incomplete
@@ -10,42 +10,6 @@ Users can:
 * View all tasks
 * Filter tasks by status (All / Active / Completed)
 
----
-
-# Project Structure
-
-```
-todo-app
-│
-├── app
-│   ├── Controllers
-│   │   └── TaskController.php
-│   │
-│   ├── Models
-│   │   └── Task.php
-│   │
-│   ├── Views
-│   │   └── tasks
-│   │       └── index.php
-│   │
-│   └── Core
-│       ├── Database.php
-│       └── Router.php
-│
-├── public
-│   ├── css
-│   │   └── style.css
-│   │
-│   ├── js
-│   │   └── app.js
-│   │
-│   └── index.php
-│
-├── database.sql
-└── README.md
-```
-
----
 
 # Requirements
 
@@ -148,27 +112,3 @@ In your browser go to:
 ```
 http://localhost:8000
 ```
-
----
-
-# Features
-
-* MVC architecture
-* PHP OOP
-* PDO database connection
-* Task filtering (All / Active / Completed)
-* Simple JavaScript interaction
-* Clean project structure
-
----
-
-# Notes
-
-The `public` folder acts as the **application entry point**.
-All requests go through `public/index.php`, following the **Front Controller pattern** used in MVC frameworks.
-
----
-
-# Author
-
-Test task implementation for a PHP developer position.
