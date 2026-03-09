@@ -1,0 +1,145 @@
+/* body { font-family: Arial; padding: 20px; }
+form input { margin: 5px; }
+ul { list-style-type: none; padding: 0; }
+li { margin: 10px 0; } */
+
+body {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #252526;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #569cd6;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #3c3c3c;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+}
+
+.task-form input::placeholder {
+    color: #6a6a6a;
+}
+
+.task-form button {
+    padding: 10px;
+    background-color: #0e639c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.task-form button:hover {
+    background-color: #1177bb;
+}
+
+.filters {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filters a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #4ec9b0;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.filters a:hover {
+    color: #3fb39b;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 4px solid #0e639c; 
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.task-list li:hover {
+    background-color: #2a2a2a;
+}
+
+.task-info strong {
+    font-size: 15px;
+    color: #dcdcaa;
+}
+
+.task-info p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #9cdcfe;
+}
+
+.task-actions a {
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #4ec9b0;
+    transition: color 0.2s;
+}
+
+.task-actions a:hover {
+    color: #3fb39b;
+}
+
+.task-actions .delete {
+    color: #f44747;
+}
+
+.task-actions .delete:hover {
+    color: #d13434;
+}
+
+.completed {
+    border-left-color: #6a9955;
+    background-color: #1e1e1e;
+}
+
+.completed strong,
+.completed p {
+    text-decoration: line-through;
+    color: #6a9955;
+}
